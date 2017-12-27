@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/transperent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/total_restaurent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="120"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_restaurent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Total Restaurents"
+                android:textColor="#e5eefc"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Hometext1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/transperent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/active_restaurent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="70"
+                android:textColor="#8aff70"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/active_restaurent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Active Restaurents"
+                android:textColor="#e5eefc"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/transperent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="50"
+                android:textColor="#ffdd61"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pending"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Pending Restaurents"
+                android:textColor="#e5eefc"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/transperent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/groups"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Groups"
+                android:textColor="#e5eefc"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/transperent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/rewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="120"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rewards"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Rewards"
+                    android:textColor="#e5eefc"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+           <!-- <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/transperent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/about_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/about_me"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="About me"
+                    android:textColor="#e5eefc"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

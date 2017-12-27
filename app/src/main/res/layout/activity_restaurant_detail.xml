@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lugma.LugmaAgent.RestaurantDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/background" />
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Restauarent name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="WWW.Bellary.com" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Bellay" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_person_black_24dp" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/contact_person"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Person name"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/contact_person"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_phone_black_24dp" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/contact_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Contact number"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/contact_number"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/telephone" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/telephone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Telephone no"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/telephone"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_mail_black_24dp" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Email"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/email"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/designation" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/designation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Designation"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/designation"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_restaurant_black_24dp" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/res_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Restauarent type"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/res_type"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/facebook" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/facebook"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Facebook"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/facebook"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/twitter" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/twitter"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Twitter"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/twitter"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/instagram" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/instagram"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Instagram"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/instagram"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/whatsapp" />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/whatsup"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center|left"
+                                android:text="Whatsup"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_below="@+id/whatsup"
+                                android:background="#0f0f0f" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
