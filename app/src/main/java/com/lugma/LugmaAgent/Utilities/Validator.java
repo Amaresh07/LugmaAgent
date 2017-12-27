@@ -13,6 +13,6 @@ public class Validator {
         return Patterns.EMAIL_ADDRESS.matcher(targetEmail).matches();
     }
     public static boolean websiteValidation(String targetWebsite){
-      return true;
+        return Patterns.WEB_URL.matcher(targetWebsite).matches();
     }
 }
